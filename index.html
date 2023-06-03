@@ -90,7 +90,7 @@
             border-radius: 4px;
         }
 
-        /*button*/
+
         .resume-button {
             display: inline-block;
             margin-top: 20px;
@@ -107,7 +107,45 @@
         .resume-button button:hover {
             background-color: #ad017a;
         }
+
+
+        .go-up-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #7e0158;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            z-index: 999;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .go-up-button:hover {
+            background-color: #555;
+        }
+
+        .go-up-button.show {
+            opacity: 1;
+        }
     </style>
+
+    <script>
+        window.addEventListener("scroll", function() {
+        var goUpButton = document.querySelector(".go-up-button");
+        if (window.pageYOffset > 100) { 
+            goUpButton.classList.add("show");
+        } else {
+            goUpButton.classList.remove("show");
+        }
+        });
+    </script>
+  
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -164,6 +202,11 @@
             </form>
         </div>
     </main>
+
+    <a href="#" class="go-up-button">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+      
 </body>
 
 </html>
