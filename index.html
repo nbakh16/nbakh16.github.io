@@ -1,17 +1,169 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Nabil Akhunjee</title>
-    </head>
+<html lang="en">
 
-    <body>
-        <div class="container">
-            <h1>Nabil Akhunjee</h1>
-            <h3>Mobile Application Developer</h3>
-            <h3>Game Developer</h3>
-            <a href="about.html">
-                <h4>About page</h4>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App Developer Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #7e0158;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project h2 {
+            font-size: 24px;
+        }
+
+        .project p {
+            margin: 10px 0;
+        }
+
+        .project img {
+            max-width: 100%;
+        }
+
+        .bio {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .bio img {
+            width: 200px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .bio h2 {
+            font-size: 24px;
+        }
+
+        .bio p {
+            margin: 10px 0;
+        }
+
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .contact-form button {
+            background-color: #7e0158;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+        /*button*/
+        .resume-button {
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .resume-button button {
+            background-color: #7e0158;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        .resume-button button:hover {
+            background-color: #ad017a;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Home | About | Projects | Contact</h1>
+    </header>
+
+    <main>
+        <div class="bio">
+            <img src="img/profile-pic.png" alt="Your Profile Picture">
+            <h2>Nabil Akhunjee</h2>
+            <p>Mobile App Developer | Game Developer</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/nbakh16/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/nbakh16" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <a href="nabil-akhunjee-cv.pdf" download class="resume-button">
+                <button>Download Resume</button>
             </a>
         </div>
-    </body>
+
+        <div class="project">
+            <h2>Project Name</h2>
+            <p>Project description</p>
+            <img src="#" alt="Project Pic">
+        </div>
+        <div class="project">
+            <h2>Project Name</h2>
+            <p>Project description</p>
+            <img src="#" alt="Project Pic">
+        </div>
+
+
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="process-form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+
 </html>
