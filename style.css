@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+#header {
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed;
+}
+
+#header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  background: rgba(34, 3, 46, 0.9);
+}
+
+#header,
+.intro-wrap {
+  height: 100vh;
+}
+.intro-wrap {
+  display: table;
+  width: 100%;
+}
+
+.intro-wrap .intro {
+  color: white;
+  line-height: 93px;
+  font-size: 32px;
+  font-weight: 300;
+  font-family: "Roboto", Montserrat, arial, sans-serif;
+  letter-spacing: 12px;
+  margin: 0;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1, h6{
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
