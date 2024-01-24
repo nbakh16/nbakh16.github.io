@@ -16,7 +16,7 @@ body {
   background-attachment: fixed;
 }
 
-#header .overlay {
+#header {
   position: absolute;
   top: 0;
   left: 0;
@@ -37,8 +37,8 @@ body {
 }
 
 .intro-wrap .intro {
-  color: white;
-  line-height: 93px;
+  color: azure;
+  line-height: 60px;
   font-size: 32px;
   font-weight: 300;
   font-family: "Roboto", Montserrat, arial, sans-serif;
@@ -55,6 +55,38 @@ h1, h6{
   margin: 0;
 }
 
+h6{
+  padding-bottom: 50px;
+}
+
 .text-center {
   text-align: center;
+}
+
+.bio {
+  color: azure;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Roboto", Montserrat, arial, sans-serif;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  width: 65vw;
+  display: table-cell;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.social a {
+  font-size: 45px;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: none;
+  color: azure;
 }
