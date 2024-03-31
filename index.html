@@ -1,39 +1,59 @@
 <!DOCTYPE html>
-<html class="no-js">
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Nabil Akhunjee</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Nabil Akhunjee &mdash; Mobile Application Developer" />
-	<meta name="keywords" content="nbakh16, nabil akhunjee, flutter, mobile application Developer, mobile Developer, kotlin, ui ux, ui-ux, frontend, mobile application ui" />
-	<meta name="author" content="nbakh16" />
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-	<!-- connect css -->
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="icomoon.css">
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
 
-	</head>
-	<body>
-		<header id="header">
-			<div class="intro-wrap">
-				<div class="intro">
-					<div class="row">
-						<div class="text-center">
-							<h1>Nabil Akhunjee</h1>
-							<h6>Mobile Application Developer</h6>
-							<p class="bio">
-								A passionate mobile app developer with a focus on Flutter, I weave pixels and code to create seamless user experiences. With an eye for minimalist design and an unwavering commitment to efficiency, I bring apps to life that are both visually stunning and intuitive to use. My experience extends to native Android development in Kotlin, allowing me to tackle projects from various angles. When I'm not coding, you'll find me obsessing over UX details and seeking inspiration in the latest design trends. I'm always eager to collaborate on projects that push the boundaries of mobile interaction and delight users. Let's chat!
-							</p>
-							<p class="social text-center">
-								<a href="https://facebook.com/nbakh16/" target="_blank"><i class="icon-facebook-with-circle"></i></a>
-								<a href="https://github.com/nbakh16" target="_blank"><i class="icon-github-with-circle"></i></a>
-								<a href="https://www.linkedin.com/in/nbakh16/" target="_blank"><i class="icon-linkedin-with-circle"></i></a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-	</body>
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="my_porto">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>my_porto</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "545776971";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+</body>
 </html>
