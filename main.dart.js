@@ -79152,7 +79152,7 @@ A.Lw.prototype={
 G(a){var s=null,r=t.w,q=A.ay(a,B.a5,r).w.a.gdT()
 if(A.ay(a,s,r).w.a.a>=1200)r=q*0.5
 else r=A.apv(a)?q*0.42:q*0.35
-return A.di(new A.H9(A.f3(14),A.atD("assets/pfp2.png",s,s,s,s),s),s,r)}}
+return A.di(new A.H9(A.f3(14),A.atD("assets/profile.webp",s,s,s,s),s),s,r)}}
 A.Ad.prototype={
 G(a){return new A.rx(new A.a9v(this),null)}}
 A.a9v.prototype={
