@@ -18,44 +18,86 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Nabil Akhunjee - Apps and Game developer">
-  <meta name="keywords" content="nbakh16, nabil akhunjee, flutter, mobile application Developer, mobile Developer, kotlin, ui ux, ui-ux, frontend, mobile application ui" />
+  <meta name="description" content="Nabil Akhunjee — Experienced Cross-Platform Developer specializing in UI/UX design and creating high-performance applications. With a background in Computer Science, I focus on building intuitive, user-friendly solutions that work seamlessly across platforms. Passionate about innovative design and optimizing user experiences.">
+  <meta name="keywords" content="nbakh16, nabil akhunjee, flutter, dart, mobile application Developer, mobile Developer, kotlin, ui ux, ui-ux, frontend, mobile application ui, python, django" />
   <meta name="author" content="Nabil Akhunjee" />
 
   <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="nbakh16">
+  <meta name="apple-mobile-web-app-title" content="my_portfolio">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>nbakh16</title>
+  <title>my_portfolio</title>
   <link rel="manifest" href="manifest.json">
 
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "280012525";
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+  <style>
+    body {
+      background-color: #002649; /* BG Color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden; /* Prevent scrolling while loading */
+    }
+
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    
+    .loader {
+      /* border and border-top should match the app theme */
+      border: 4px solid #FFFFFF;
+      border-top: 4px solid #3F51B5;
+      border-radius: 50%;
+      /* similar size to CircularProgressIndicator */
+      width: 35px;
+      height: 35px;
+      /* similar animation to CircularProgressIndicator */
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    img {
+      width: 160px;
+      height: 160px;
+      animation: scale 3s ease-in-out forwards; 
+      /* animation: scale 1.5s ease-in-out infinite;  */
+    }
+    
+    @keyframes scale {
+      0% {
+        transform: scale(0.5);
+      }
+      /* 50% {
+        transform: scale(0.8);
+      } */
+      100% {
+        transform: scale(2);
+      }
+    }
+  </style>
 </head>
 <body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
+  <div class="loading">
+    <img src="duck.gif" alt="Loading..." />
+  </div>
+
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
